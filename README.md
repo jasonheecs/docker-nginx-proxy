@@ -1,6 +1,7 @@
 # Modified Docker Image for nginx-proxy
+[![Build Status][travis-badge]][travis-link] [![Docker Automated Build Status][docker-build-badge]][docker-hub-link]
 
-A modified docker image based on the [nginx-proxy](https://github.com/jwilder/nginx-proxy) docker image. Increased nginx upload limts and removed nginx server tokens.
+A modified docker image based on the [nginx-proxy](https://github.com/jwilder/nginx-proxy) docker image. Increased nginx upload limits and removed nginx server tokens.
 
 ## Usage
 
@@ -8,7 +9,7 @@ A modified docker image based on the [nginx-proxy](https://github.com/jwilder/ng
 
 Sample `docker-compose` file:
 
-```
+```yml
 version: '2'
 services:
   nginx-proxy:  
@@ -40,3 +41,8 @@ Refer to the [travis.yml](.travis.yml) file and [Travis build logs][travis-link]
 
 ## License
 MIT
+
+[docker-build-badge]: https://img.shields.io/docker/build/jasonheecs/nginx-proxy.svg
+[docker-hub-link]: https://hub.docker.com/r/jasonheecs/nginx-proxy/
+[travis-badge]: https://travis-ci.com/jasonheecs/docker-nginx-proxy.svg?branch=master
+[travis-link]: https://travis-ci.com/jasonheecs/docker-nginx-proxy
